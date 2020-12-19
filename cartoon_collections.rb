@@ -6,7 +6,7 @@ def summon_captain_planet(plants)# code an argument here
   plants.map {|fern| "#{fern.capitalize}!"}
 end
 
-def long_planeteer_calls
+def long_planeteer_calls(calls)
     calls.any? do |call|
       call.length > 4
     end
