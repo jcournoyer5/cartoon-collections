@@ -7,12 +7,8 @@ def summon_captain_planet(plants)# code an argument here
 end
 
 def long_planeteer_calls
-  is_long = nil
-  calls.map do |call|
-    if call.length > 4
-    is_long = true
-    else
-    is_long = false
+    calls.any? do |call|
+      call.length > 4
     end
 end
 
@@ -21,5 +17,4 @@ def find_the_cheese(cheese_name)# code an argument here
   cheese_types = ["cheddar", "gouda", "camembert"]
 
   cheese_name.find{|is_cheese| cheese_types.include?(is_cheese)}
-end
 end
